@@ -1,0 +1,12 @@
+package : Background
+
+profiles:
+1. profile: Creates employeees profile
+2. profile table : Gets all the information and upload to the MYSQL
+3. GetProfiles: returns all employees profiles in arraylist
+4. SearchProfile: searches and returns arraylist it searches with name, job, industry, salary 
+
+attendance:
+5.Attendence: create attendence for 1 day
+6.Attendence: uses for get attendence 1 person for 1 day and inserts into MYSQL
+7.GetAttendence: This class get Attendence total or lists by Name, date, month, year

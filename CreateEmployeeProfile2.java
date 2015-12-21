@@ -81,10 +81,8 @@ public class CreateEmployeeProfile implements ActionListener{
 				String empName = name.getText().toString();
 				String empSalary = salary.getText().toString();
 				String workingIndustry = industry.getSelectedItem().toString();
-				String oneDaySalary = convertSalary(salary.getText().toString());
 				
-				
-				String combine = "["+empName+"]  ["+empSalary+"]  ["+workingIndustry+"]  ["+oneDaySalary+"]";
+				String combine = empName+" "+empSalary+" "+workingIndustry;
 				storage.add(combine);
 				
 				
@@ -132,14 +130,6 @@ public class CreateEmployeeProfile implements ActionListener{
 		}
 		
 	}
-	
-	private String convertSalary(String oneMonthSalary){
-		int month = Integer.parseInt(oneMonthSalary);
-		double oneDay = (double) month/30;
-		
-		return (Double.toString(oneDay));
-	}
-	
 	
 	/**
 	 * private Instances
